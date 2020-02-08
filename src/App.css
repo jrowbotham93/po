@@ -11,9 +11,8 @@
 
 .section-b {
   min-height: 100vh;
-  background-color: #F0F4FA;
+  background-color: #f0f4fa;
   padding: 150px;
-
 }
 
 .container-a {
@@ -32,16 +31,16 @@
   flex-direction: column;
 }
 
-.flex-center{
+.flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flex-row{
+.flex-row {
   flex-direction: row;
 }
-.flex-column{
+.flex-column {
   flex-direction: column;
 }
 
@@ -56,38 +55,16 @@
   padding-top: 10%;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 0;
-  height: 70px;
-}
-.main-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-}
-.nav-links {
-  text-decoration: None;
-  margin-right: 30%;
-}
-
-.nav-links > a{
-  color: black;
-  font-weight: bold;
-  font-size: 1.4rem;
-}
-
-.subheader-a{
+.subheader-a {
   font-weight: bold;
   color: #01bb85;
 }
 
-.nav-links > a:hover{
+.nav-links > a:hover {
   color: #01bb85;
 }
 
-.green{
+.green {
   color: #01bb85;
 }
 
@@ -97,7 +74,7 @@
 .text-xl-hover {
   font-size: 10vh;
 }
-.text-xl-hover:hover{
+.text-xl-hover:hover {
   color: #01bb85;
 }
 .text-lg {
@@ -106,7 +83,7 @@
 .text-lg-hover {
   font-size: 5vh;
 }
-.text-lg-hover:hover{
+.text-lg-hover:hover {
   color: #01bb85;
 }
 .text-md {
@@ -115,7 +92,7 @@
 .text-md-hover {
   font-size: 3vh;
 }
-.text-md-hover:hover{
+.text-md-hover:hover {
   color: #01bb85;
 }
 .text-sm {
@@ -124,14 +101,14 @@
 .text-sm-hover {
   font-size: 1vh;
 }
-.text-sm-hover:hover{
+.text-sm-hover:hover {
   color: #01bb85;
 }
-.text-black{
+.text-black {
   color: black;
 }
 
-.text-align{
+.text-align {
   text-align: center;
 }
 
@@ -153,15 +130,15 @@
   line-height: 2em;
 }
 
-.margin-top-5{
+.margin-top-5 {
   margin-top: 5px;
 }
 
 .btn {
   box-sizing: border-box;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background-color: transparent;
   border: 1px solid #01bb85;
   border-radius: 0.6em;
@@ -176,16 +153,17 @@
   text-align: center;
 }
 
-.btn-sm{
+.btn-sm {
   padding: 0.3em 0.7em;
 }
-.btn-md{
+.btn-md {
   padding: 0.6em 1.4em;
 }
-.btn-lg{
+.btn-lg {
   padding: 1.2em 2.8em;
 }
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #fff;
   outline: 0;
 }
@@ -195,5 +173,5 @@
   transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
 } */
 .btn:hover {
-  box-shadow: 0 0 40px 40px  #01bb85 inset;
+  box-shadow: 0 0 40px 40px #01bb85 inset;
 }
