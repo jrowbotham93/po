@@ -7,7 +7,6 @@ function Services() {
   return (
     <React.Fragment>
       <section className="section-a">
-        {/* <Menu/> */}
         <div className="container-a">
           <Header
             text={

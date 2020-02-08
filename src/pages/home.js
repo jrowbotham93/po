@@ -1,5 +1,4 @@
 import React from 'react';
-import Menu from '../components/Menu.js';
 import Grid from '../components/Grid.js';
 import Header from '../components/Header.js';
 import Footer from '../components/Footer.js';

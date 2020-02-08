@@ -1,0 +1,46 @@
+.footer-distributed {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: 12px;
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 50px;
+}
+
+.footer-center div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-distributed i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.footer-distributed a {
+  color: black;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed a:hover {
+  color: #01bb85;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+}
+
+.footer-distributed > div {
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}

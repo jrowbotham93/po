@@ -3,6 +3,13 @@
   font-family: "'Montserrat', sans-serif";
 }
 
+.margin-top {
+  margin-top: 100px;
+}
+.margin-top-medium {
+  margin-top: 50px;
+}
+
 .section-a {
   min-height: 100vh;
   color: white;
@@ -29,6 +36,11 @@
   align-items: center;
   height: 600px;
   flex-direction: column;
+}
+
+.container {
+  padding: 20px 40px;
+  color: black;
 }
 
 .flex-center {
@@ -174,4 +186,8 @@
 } */
 .btn:hover {
   box-shadow: 0 0 40px 40px #01bb85 inset;
+}
+
+.centered {
+  text-align: center;
 }
