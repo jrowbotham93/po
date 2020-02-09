@@ -18,7 +18,7 @@ function Contact() {
             </div>
           </div>
           <div className="row margin-top">
-            <h2><TextTranslator label={"contactHead"}/></h2>
+            <h2><TextTranslator label={"contactHeading"}/></h2>
           </div>
           <div className="ui equal width stackable grid">
             <div className="row">

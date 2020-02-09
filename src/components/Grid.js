@@ -11,7 +11,7 @@ import i18n from '../i18n';
 function Grid(){
     return (
         <div className="ui stackable four column grid">
-            <div className="Left floated left aligned column">
+            <div className="Left floated right aligned column">
                 <img className="image" src={svgB}></img>
             </div>
             <div className="Left floated left aligned column text-black">
@@ -36,10 +36,10 @@ function Grid(){
                     <Button styles={"btn btn-sm"} text={"Read more"}></Button>
                 </Link>
             </div>
-            <div className="Right floated right aligned column">
+            <div className="Right floated left aligned column">
                 <img className="image" src={svgC}></img>
             </div>
-            <div className="Left floated left aligned column">
+            <div className="Left floated right aligned column">
                 <img className="image" src={svgA}></img>
             </div>
             <div className="Left floated left aligned column">
@@ -64,7 +64,7 @@ function Grid(){
                     <Button styles={"btn btn-sm"} text={"Read more"}></Button>
                 </Link>
             </div>
-            <div className="Right floated right aligned column">
+            <div className="Right floated left aligned column">
                 <img className="image" src={svgD}></img>
             </div>
         </div>

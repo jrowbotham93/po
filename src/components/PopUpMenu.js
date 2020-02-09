@@ -1,56 +1,62 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
 
-export default ({ close }) => (
-  <div className="menu">
-    <ul>
-      <li>
-        <Link
-          onClick={close}
-          activeClassName="current"
-          to={`/${i18n.language}/`}
-        >
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link
-          onClick={close}
-          activeClassName="current"
-          to={`/${i18n.language}/ourstory`}
-        >
-          Our Story
-        </Link>
-      </li>
+function PopUpMenu({close}) {
+  const { t } = useTranslation();
+  return (
+    <div className="menu">
+      <ul>
+        <li>
+          <Link
+            onClick={close}
+            activeClassName="current"
+            to={`/${i18n.language}/`}
+          >
+            {t('home')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={close}
+            activeClassName="current"
+            to={`/${i18n.language}/ourstory`}
+          >
+            {t('ourHistoryHeading')}
+          </Link>
+        </li>
 
-      <li>
-        <Link
-          onClick={close}
-          activeClassName="current"
-          to={`/${i18n.language}/products`}
-        >
-          Our Products
-        </Link>
-      </li>
-      <li>
-        <Link
-          onClick={close}
-          activeClassName="current"
-          to={`/${i18n.language}/services`}
-        >
-          Our Services
-        </Link>
-      </li>
-      <li>
-        <Link
-          onClick={close}
-          activeClassName="current"
-          to={`/${i18n.language}/contact`}
-        >
-          Contact
-        </Link>
-      </li>
-    </ul>
-  </div>
-);
+        <li>
+          <Link
+            onClick={close}
+            activeClassName="current"
+            to={`/${i18n.language}/products`}
+          >
+            {t('ourProductsHeading')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={close}
+            activeClassName="current"
+            to={`/${i18n.language}/services`}
+          >
+            {t('ourServicesHeading')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={close}
+            activeClassName="current"
+            to={`/${i18n.language}/contact`}
+          >
+            {t('contactHeading')}
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+export default PopUpMenu;

@@ -8,9 +8,9 @@
     "ourServicesHeading":"Services",
     "contactHead": "Contact",
     "whyUkraineHeading":"Why Ukraine",
-    "ourHistorySubHead": "From cultivating crops to cultivating culture: read about why ProOraganica was formed",
+    "ourHistorySubHead": "From cultivating crops to cultivating culture: read about ProOrganica",
     "ourServicesSubHead": "We offer expertise in sourcing, purchasing, handling and processing",
-    "ourProductsSubHead": "Organic grains, pulses and beats from the richest soils on earth",
+    "ourProductsSubHead": "Organic grains, pulses and beans from the richest soils on earth",
     "whyUkraineSubHead": "Why Ukraine is set to become an organic agricultural powerhouse",
 
     "missionHeading": "Our Mission",
@@ -29,10 +29,13 @@
     "exportingTextB": "Containers are shipped via Odessa, Ochakiv or Bilhorod-Dnistrovskyi sea ports. Ukraine's location on the Black Sea allows us to offer fast export processing and low freight rates to major European, Asian and African markets.",
     "exportingTextC": "We ensure that all shipping and logistics are conducted by certified organic freight forwarders to maintain the organic integrity of our supply chain.",
     "qualityControlText": "We provide full traceability and transparency throughout our entire supply-chain and take charge of conducting quality checks and product analysis which go above and beyond the regulatory standards***. This allows our manufacturers and retailers to validate claims about products and practices and communicate these to customers.",
-    "servicesFootnote": "*According to Article 29 of regulations (EC) №834/2007 and 889/2008 annex XII. **We can ship the products in paper bags of various weights: 20 kg, 25 kg, 50 kg, 1 ton Big bags or in bulk according to customer’s requirements, as well as provide packages with specific labels or prints. ***EC Regulation no.178/2002 and EU Regulation no. 834/07.",
+    "servicesFootnoteA": "*According to Article 29 of regulations (EC) №834/2007 and 889/2008 annex XII.",
+    "servicesFootnoteB": "**We can ship the products in paper bags of various weights: 20 kg, 25 kg, 50 kg, 1 ton Big bags or in bulk according to customer’s requirements, as well as provide packages with specific labels or prints.",
+    "servicesFootnoteC": "***EC Regulation no.178/2002 and EU Regulation no. 834/07.",
 
     "contact": "contact",
     "readMore": "read more",
+    "home": "Home",
 
     "contactHeading": "Contact Info",
     "contactSubheading": "Drop us an e-mail if you would like to find out more about ProOrganica and our work in Ukraine",
