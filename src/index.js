@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import './i18n';
 import 'semantic-ui-css/semantic.min.css';
+import './index.css';
+
 import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render((
+ReactDOM.render(
   <BrowserRouter>
     <App />
-  </BrowserRouter>
-  ), document.getElementById('root')
+  </BrowserRouter>,
+  document.getElementById('root')
 );

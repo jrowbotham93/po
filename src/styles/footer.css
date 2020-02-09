@@ -1,0 +1,58 @@
+.footer-distributed {
+  width: 100%;
+  font: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 55px 50px;
+  margin: 80px 0;
+}
+
+.footer-center div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-distributed i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.footer-distributed .fa-map-marker {
+  font-size: 18px;
+}
+
+.footer-distributed a {
+  color: black;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed a:hover {
+  color: #01bb85;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-distributed > div {
+  width: 20%;
+}
+
+@media (max-width: 800px) {
+  .footer-distributed > div {
+    width: 100%;
+  }
+  .footer-distributed > div:nth-child(2) {
+    margin: 20px 0;
+  }
+}

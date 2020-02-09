@@ -1,16 +1,16 @@
 import React from 'react';
 // import { useTranslation } from 'react-i18next';
-import "../i18n";
+import '../i18n';
 
-function Header({styleA, styleB, text, subtext}){
+function Header({ styleA, styleB, text, subtext }) {
   // const { t } = useTranslation();
   return (
     <div className={styleA}>
       {text}
-      <p className={styleB}>{t({subtext})}</p>
+      <p className={styleB}>{subtext}</p>
     </div>
-  )
-};
+  );
+}
 
 export default Header;
 

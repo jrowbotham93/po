@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  background: white;
+}
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+.nav-links {
+  text-decoration: none;
+  margin-right: 30%;
+}
+
+.nav-links > a {
+  color: black;
+  font-size: 1.2rem;
+}
