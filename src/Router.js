@@ -8,6 +8,7 @@ import Story from './pages/story';
 import Ukraine from './pages/ukraine';
 import Menu from './components/Menu';
 import Footer from './components/Footer';
+import NotFound from './pages/404NotFound';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -38,6 +39,7 @@ const Router = ({ i18n, t, history, match }) => {
         ></Route>
         <Route exact path={`/:lang(en|ru)/ourstory`} component={Story}></Route>
         <Route exact path={`/:lang(en|ru)/ukraine`} component={Ukraine}></Route>
+        <Route path={`*`} component={NotFound}></Route>
       </Switch>
       <Footer i18n={i18n} />
     </>
