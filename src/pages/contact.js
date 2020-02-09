@@ -9,7 +9,7 @@ function Contact() {
   return (
     <React.Fragment>
       <div className="container">
-        <section className="ui grid">
+        <section className="ui stackable grid">
           <div className="row">
             <div className="sixteen wide tablet eight wide computer column">
               <h1>

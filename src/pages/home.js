@@ -27,7 +27,7 @@ function Home() {
           </Link>
         </div>
       </section>
-      <section className="section-b">
+      <section className="container section-b">
         <Grid />
       </section>
     </React.Fragment>

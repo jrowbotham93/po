@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding-bottom: 0;
   padding: 20px;
   position: fixed;
@@ -25,4 +26,9 @@
 .nav-links > a {
   color: black;
   font-size: 1.2rem;
+}
+
+.ui.compact.menu {
+  box-shadow: none;
+  border: none;
 }

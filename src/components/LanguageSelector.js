@@ -1,16 +1,20 @@
-import React from 'react'
+import React from 'react';
 
-import { withTranslation } from "react-i18next";
-import { withRouter } from "react-router-dom";
+import { withTranslation } from 'react-i18next';
+import { withRouter } from 'react-router-dom';
 
-const supportedLanguages = ["en", "ru", "fr", "ua", "de"];
+import { supportedLanguages } from '../i18n';
 
 function LanguageSwitcherComp(props) {
   const { i18n, t, history, match } = props;
 
+  console.log(i18n.language);
+
   const changeLanguage = nextLang => {
     i18n.changeLanguage(nextLang, () => {
-      const newUrl = `/${nextLang}/${t(match.params.page)}`;
+      const newUrl = `/${nextLang}${window.location.pathname.substr(
+        window.location.pathname.lastIndexOf('/')
+      )}`;
       history.push(newUrl);
     });
   };
@@ -18,21 +22,29 @@ function LanguageSwitcherComp(props) {
     changeLanguage(supportedLanguages[index]);
   };
   return (
-      <>
-        <div className="ui compact menu">
-          <div className="ui simple dropdown item">
-              <i className="world icon"></i>
-              <div className="menu">
-              {supportedLanguages.map((option, index) => (
-                <div className="item" key={option} onClick={event => handleClickSelectLanguage(event, index)}>
-                  <i className={`${option === 'en' ? 'gb uk' : option } flag`}></i>
+    <>
+      <div className="ui compact menu">
+        <div className="ui simple dropdown item">
+          <i
+            className={`${
+              i18n.language === 'en' ? 'gb uk' : i18n.language
+            } flag`}
+          ></i>
+          <div className="menu">
+            {supportedLanguages.map((option, index) => (
+              <div
+                className="item"
+                key={option}
+                onClick={event => handleClickSelectLanguage(event, index)}
+              >
+                <i className={`${option === 'en' ? 'gb uk' : option} flag`}></i>
               </div>
-              ))}
-            </div>
+            ))}
           </div>
         </div>
-      </>
-    );
-  }
+      </div>
+    </>
+  );
+}
 
-export default withRouter(withTranslation("routes")(LanguageSwitcherComp));
+export default withRouter(withTranslation('routes')(LanguageSwitcherComp));

@@ -4,37 +4,36 @@ import { Image } from 'semantic-ui-react';
 import logo from '../images/logo.jpg';
 import Lng from './LanguageSelector.js';
 import '../styles/navbar.css';
+import '../styles/hamburger.css';
 import i18n from '../i18n';
-import { useTranslation } from 'react-i18next';
+import Popup from 'reactjs-popup';
+import BurgerIcon from '../components/BurgerIcon';
+import PopUpMenu from '../components/PopUpMenu';
+
+const contentStyle = {
+  background: '#01bb85',
+  width: '80%',
+  border: 'none'
+};
 
 export default function Menu() {
-  const { t } = useTranslation();
-
-  return(
+  return (
     <nav className="navbar">
       <Link to={`/${i18n.language}/`}>
         <Image size="small" src={logo} />
       </Link>
-      <ul className="main-nav" id="js-menu">
-        <li className="nav-links">
-          <Link to={`/${i18n.language}/services`}>
-            {t('ourServicesHeading')}
-          </Link>
-        </li>
-        <li className="nav-links">
-          <Link to={`/${i18n.language}/ourstory`}>
-            {t('ourHistoryHeading')}
-          </Link>
-        </li>
-        <li className="nav-links">
-          <Link to={`/${i18n.language}/contact`}>
-            {t('contactHead')}
-          </Link>
-        </li>
-        <li className="nav-links">
-          <Lng />
-        </li>
-      </ul>
+      <div className="flex-center ">
+        <Lng />
+        <Popup
+          modal
+          overlayStyle={{ background: '#01bb85' }}
+          contentStyle={contentStyle}
+          closeOnDocumentClick={false}
+          trigger={open => <BurgerIcon open={open} />}
+        >
+          {close => <PopUpMenu close={close} />}
+        </Popup>
+      </div>
     </nav>
   );
-};
+}
