@@ -3,6 +3,8 @@ import crops from '../images/crops.jpg';
 import farm from '../images/farm.jpg';
 import grain from '../images/grain.jpg';
 import containers from '../images/containers.jpg';
+import TextTranslator from  '../components/TextTranslator';
+
 function Products() {
   return (
     <div className="services">
@@ -10,12 +12,8 @@ function Products() {
         <section className="ui centered grid">
           <div className="row">
             <div className="sixteen wide tablet eight wide computer column">
-              <h1 className="centered">Our Services</h1>
-              <p className="centered text-md">
-                We primarily focus on business-to-business partnerships and have
-                proven expertise in sourcing, purchasing, and handling as well
-                as processing and supply capabilities.
-              </p>
+              <h1 className="centered"><TextTranslator label={'serviceHeading'}/></h1>
+              <p className="centered text-md"><TextTranslator label={'serviceText'}/></p>
             </div>
           </div>
         </section>
@@ -23,12 +21,8 @@ function Products() {
       <section className="ui stacked grid">
         <div className="row margin-top">
           <div className="sixteen wide tablet eight wide computer column text">
-            <h3>Sourcing</h3>
-            <p>
-              All the farms we work with are certified organic* and all the raw
-              materials that we process go through strict hygiene/sanitary
-              checks performed by independent accredited laboratories.
-            </p>
+            <h3><TextTranslator label={'sourcingHeading'}/></h3>
+            <p><TextTranslator label={'sourcingText'}/></p>
           </div>
           <div className="sixteen wide tablet eight wide computer column">
             <img src={crops} alt="" />
@@ -39,22 +33,14 @@ function Products() {
             <img src={farm} alt="" />
           </div>
           <div className="sixteen wide tablet eight wide computer column text">
-            <h3>Purchasing</h3>
-            <p>
-              We always purchase produce directly from Ukrainian organic farmers
-              at a fair price, supporting small and family companies across the
-              region.
-            </p>
+            <h3><TextTranslator label={'purchasingHeading'}/></h3>
+            <p><TextTranslator label={'purchasingText'}/></p>
           </div>
         </div>
         <div className="row">
           <div className="sixteen wide tablet eight wide computer column text">
-            <h3>Handling</h3>
-            <p>
-              We are the first independently certified service facilities in
-              Ukraine for the cleaning, sorting, packaging** and storing of
-              organic grains and pulses.
-            </p>
+            <h3><TextTranslator label={'handlingHeading'}/></h3>
+            <p><TextTranslator label={'handlingText'}/></p>
           </div>
           <div className="sixteen wide tablet eight wide computer column">
             <img src={grain} alt="" />
@@ -65,39 +51,19 @@ function Products() {
             <img src={containers} alt="" />
           </div>
           <div className="sixteen wide tablet eight wide computer column text">
-            <h3>Exporting</h3>
-            <p>
-              We can arrange for reliable and cost-effective international
-              transport of products by rail, vessel, barge, container and truck.
-              Containers are shipped via Odessa, Ochakiv or
-              Bilhorod-Dnistrovskyi sea ports.
-            </p>
-            <p>
-              Ukraine's location on the Black Sea allows us to offer fast export
-              processing and low freight rates to major European, Asian and
-              African markets.
-            </p>
-            <p>
-              We ensure that all shipping and logistics are conducted by
-              certified organic freight forwarders to maintain the organic
-              integrity of our supply chain.
-            </p>
+            <h3><TextTranslator label={'exportingHeading'}/></h3>
+            <p><TextTranslator label={'exportingTextA'}/></p>
+            <p><TextTranslator label={'exportingTextB'}/></p>
+            <p><TextTranslator label={'exportingTextC'}/></p>
           </div>
-        </div>
-        <div className="row">
-          <div className="sixteen wide tablet eight wide computer column text">
-            <h3>Quality Control</h3>
-            <p>
-              We provide full traceability and transparency throughout our
-              entire supply-chain and take charge of conducting quality checks
-              and product analysis which go above and beyond the regulatory
-              standards***. This allows our manufacturers and retailers to
-              validate claims about products and practices and communicate these
-              to customers.
-            </p>
-          </div>
-          <div className="sixteen wide tablet eight wide computer column">
-            <img src={crops} alt="" />
+          <div className="row">
+            <div className="sixteen wide tablet eight wide computer column text">
+              <h3><TextTranslator label={'qualityControlHeading'}/></h3>
+              <p><TextTranslator label={'qualityControlText'}/></p>
+            </div>
+            <div className="sixteen wide tablet eight wide computer column">
+              <img src={crops} alt="" />
+            </div>
           </div>
         </div>
       </section>
