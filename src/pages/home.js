@@ -27,7 +27,7 @@ function Home() {
           </Link>
         </div>
       </section>
-      <section className="container section-b">
+      <section className="container section-b flex-center">
         <Grid />
       </section>
     </React.Fragment>
