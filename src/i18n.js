@@ -13,7 +13,6 @@ i18n
     whitelist: supportedLanguages,
     fallbackLng: 'en',
     debug: true,
-
     interpolation: {
       escapeValue: false
     },

@@ -8,8 +8,6 @@ import { supportedLanguages } from '../i18n';
 function LanguageSwitcherComp(props) {
   const { i18n, t, history, match } = props;
 
-  console.log(i18n.language);
-
   const changeLanguage = nextLang => {
     i18n.changeLanguage(nextLang, () => {
       const newUrl = `/${nextLang}${window.location.pathname.substr(
