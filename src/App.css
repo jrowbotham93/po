@@ -62,6 +62,11 @@
   height: auto;
 }
 
+.image-sm {
+  max-width: 25%;
+  height: auto;
+}
+
 .l-image {
   width: 100%;
   height: auto;
@@ -109,10 +114,10 @@
   color: #01bb85;
 }
 .text-sm {
-  font-size: 1vh;
+  font-size: 2.5vh;
 }
 .text-sm-hover {
-  font-size: 1vh;
+  font-size: 2.5vh;
 }
 .text-sm-hover:hover {
   color: #01bb85;
@@ -181,10 +186,6 @@
   outline: 0;
 }
 
-/* .btn-animated {
-  -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
-} */
 .btn:hover {
   box-shadow: 0 0 40px 40px #01bb85 inset;
 }

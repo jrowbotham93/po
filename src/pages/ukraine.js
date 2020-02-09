@@ -1,24 +1,38 @@
 import React from 'react';
-import Menu from '../components/Menu.js';
-import Grid from '../components/Grid.js';
-import Header from '../components/Header.js';
-import Footer from '../components/Footer.js';
+import svgUkraine from '../images/ukraine.svg';
+import TextTranslator from "../components/TextTranslator";
 
 function Ukraine() {
   return (
-    <React.Fragment>
-      <section className="section-a">
-        <Menu />
-        <div className="container-a">
-          <Header
-            style={'ui huge header'}
-            text={
-              'Drop us an e-mail if you would like to find out more about ProOrganica and our work in Ukraine'
-            }
-          />
+    <div className="services">
+      <div className="container">
+        <section className="ui centered grid">
+          <div className="row">
+            <div className="sixteen wide tablet eight wide computer column">
+              <h1 className="centered"><TextTranslator label={'ukraineHeading'}/></h1>
+              <p className="centered text-md"><TextTranslator label={'ukraineTextA'}/></p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section className="ui stacked grid">
+        <div className="row margin-top">
+          <div className="sixteen wide tablet eight wide computer column text">
+            <h3><TextTranslator label={'ukraineSubHeadingA'}/></h3>
+            <p><TextTranslator label={'ukraineTextB'}/></p>
+            <h3><TextTranslator label={'ukraineSubHeadingB'}/></h3>
+            <p><TextTranslator label={'ukraineTextC'}/></p>
+            <h3><TextTranslator label={'ukraineSubHeadingC'}/></h3>
+            <p><TextTranslator label={'ukraineTextD'}/></p>
+            <h3><TextTranslator label={'ukraineSubHeadingD'}/></h3>
+            <p><TextTranslator label={'ukraineTextE'}/></p>
+          </div>
+          <div className="sixteen wide tablet eight wide computer column">
+            <img className="image" src={svgUkraine} alt="" />
+          </div>
         </div>
       </section>
-    </React.Fragment>
+    </div>
   );
 }
 

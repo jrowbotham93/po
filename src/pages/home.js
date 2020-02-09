@@ -1,12 +1,11 @@
 import React from 'react';
 import Grid from '../components/Grid.js';
 import Header from '../components/Header.js';
-import Footer from '../components/Footer.js';
 import Button from '../components/Button.js';
 import logo from '../images/logo.jpg';
 import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import TextTranslator from "../components/TextTranslator.js";
+import i18n from '../i18n';
 
 function Home() {
   return (
@@ -17,9 +16,9 @@ function Home() {
           <Header
             styleA={'text-lg text-black line-height'}
             styleB={'text-md-hover line-height'}
-            text={'progressive, protactive, professional'}
+            text={'headingMain'}
           />
-          <Link to="/contact">
+          <Link to={`/${i18n.language}/contact`}>
             <Button styles={'btn-lg btn'} text={'Get in touch'}></Button>
           </Link>
         </div>

@@ -3,7 +3,7 @@ import "../i18n";
 import { useTranslation } from 'react-i18next';
 
 function Header({styleA, styleB, text, subtext}){
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className={styleA}>
       {t(text)}

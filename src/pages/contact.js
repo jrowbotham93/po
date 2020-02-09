@@ -1,8 +1,4 @@
 import React from 'react';
-import Divider from '../components/Divider';
-import Header from '../components/Header.js';
-import Footer from '../components/Footer.js';
-import Card from '../components/Card.js';
 
 function Contact() {
   return (
@@ -20,7 +16,7 @@ function Contact() {
           <div className="row margin-top">
             <h2>Contact us</h2>
           </div>
-          <div class="ui equal width stackable grid">
+          <div className="ui equal width stackable grid">
             <div className="row">
               <div className=" column">
                 <p>Eugene Blokhin</p>

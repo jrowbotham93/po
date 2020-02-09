@@ -1,3 +1,9 @@
 {
-    "/home": "/home"
+    "/": "/",
+    "/contact": "/contact",
+    "/services": "/services",
+    "/products": "/products",
+    "/ourstory": "/ourstory",
+    "/ourvalues": "/ourvalues",
+    "/ukraine": "/ukraine"
 }
