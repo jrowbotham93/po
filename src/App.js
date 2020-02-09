@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Loader from './components/Loader';
 import Router from './Router';
 import './App.css';
@@ -7,7 +7,11 @@ import './i18n';
 import { BrowserRouter, Switch, Redirect } from 'react-router-dom';
 
 function AppComp({ i18n, t, tReady, match, history }) {
+  if (!window.location.pathname.includes(i18n.language)) {
+    window.location.href = window.location.href + i18n.language;
+  }
   if (!tReady) return <Loader />;
+
   return (
     <BrowserRouter>
       <Switch>
