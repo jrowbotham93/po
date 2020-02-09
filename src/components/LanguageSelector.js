@@ -43,7 +43,6 @@ function LanguageSwitcherComp(props) {
           </div>
         </div>
       </div>
-      {children}
     </>
   );
 }
