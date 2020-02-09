@@ -17,8 +17,8 @@ const Grid = () => {
                 <Header
                     styleA={"text-lg-hover"}
                     styleB={"text-md padding-top-1 padding-bottom-1"}
-                    text={"services"}
-                    subtext={"Check out our plug-in marketplace"}>
+                    text={"ourServicesHeading"}
+                    subtext={"ourServicesSubHead"}>
                 </Header>
                 <Link to="/services">
                     <Button styles={"btn btn-sm"} text={"Read more"}></Button>
@@ -28,8 +28,8 @@ const Grid = () => {
                 <Header
                     styleA={"text-lg-hover"}
                     styleB={"text-md padding-top-1 padding-bottom-1"}
-                    text={"products"}
-                    subtext={"Check out our plug-in marketplace"}>
+                    text={"ourProductsHeading"}
+                    subtext={"ourProductsSubHead"}>
                 </Header>
                 <Link to="/products">
                     <Button styles={"btn btn-sm"} text={"Read more"}></Button>
@@ -45,8 +45,8 @@ const Grid = () => {
                 <Header
                     styleA={"text-lg-hover"}
                     styleB={"text-md padding-top-1 padding-bottom-1"}
-                    text={"why ukraine"}
-                    subtext={"Check out our plug-in marketplace"}>
+                    text={"whyUkraineHeading"}
+                    subtext={"whyUkraineSubHead"}>
                 </Header>
                 <Link to="/ukraine">
                     <Button styles={"btn btn-sm"} text={"Read more"}></Button>
@@ -56,8 +56,8 @@ const Grid = () => {
                 <Header
                     styleA={"text-lg-hover"}
                     styleB={"text-md padding-top-1 padding-bottom-1"}
-                    text={"our story"}
-                    subtext={"Check out our plug-in marketplace"}>
+                    text={"ourHistoryHeading"}
+                    subtext={"ourHistorySubHead"}>
                 </Header>
                 <Link to="/ourstory">
                     <Button styles={"btn btn-sm"} text={"Read more"}></Button>

@@ -6,6 +6,7 @@ import Button from '../components/Button.js';
 import logo from '../images/logo.jpg';
 import { Image } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
+import TextTranslator from "../components/TextTranslator.js";
 
 function Home() {
   return (

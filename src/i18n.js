@@ -1,26 +1,30 @@
 import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
 import Backend from 'i18next-xhr-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
-import { reactI18nextModule } from "react-i18next";
+// not like to use this?
+// have a look at the Quick start guide
+// for passing in lng and translations on init
+const supportedLanguages = ["en", "ru"];
 
-const fallbackLng = ['en'];
-const availableLanguages = ['en', 'ru', 'uk', 'fr', 'de'];
 
 i18n
-  .use(Backend) // load translation using xhr -> see /public/locales. We will add locales in the next step
-
-  .use(LanguageDetector) // detect user language
-
-  .use(reactI18nextModule) // pass the i18n instance to react-i18next.
-
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
-    fallbackLng, // if user computer language is not on the list of available languages, than we will be using the fallback language specified earlier
+    whitelist: supportedLanguages,
+    fallbackLng: "en",
     debug: true,
-    whitelist: availableLanguages,
 
     interpolation: {
-      escapeValue: false
+      escapeValue: false // not needed for react as it escapes by default
     },
+    detection: {
+      order: ["path", "navigator"]
+    }
   });
+
 
 export default i18n;

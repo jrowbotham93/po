@@ -1,22 +1,46 @@
 import React from 'react'
-import { Dropdown } from 'semantic-ui-react'
 
-const countryOptions = [
-  { key: 'uk', value: 'uk', flag: 'uk', text: 'English' },
-  { key: 'ua', value: 'ua', flag: 'ua', text: 'Ukrainian' },
-  { key: 'ru', value: 'ru', flag: 'ru', text: 'Russian' },
-  { key: 'fr', value: 'fr', flag: 'fr', text: 'French' },
-  { key: 'de', value: 'de', flag: 'de', text: 'German' },
-]
+import {
+  useTranslation,
+  withTranslation
+} from "react-i18next";
 
-const LanguageSelector = () => (
-  <Dropdown
-    placeholder='Select Language'
-    fluid
-    search
-    selection
-    options={countryOptions}
-  />
-)
+import {
+  withRouter,
+  Link
+} from "react-router-dom";
 
-export default LanguageSelector;
+const supportedLanguages = ["en", "ru"];
+
+function LanguageSwitcherComp(props) {
+  const { children, i18n, t, history, match } = props;
+  const changeLanguage = nextLang => {
+    i18n.changeLanguage(nextLang, () => {
+      // const newUrl = localizeLink(routeName, match.params);
+      const newUrl = `/${nextLang}/${t(match.params.page)}`;
+      history.push(newUrl);
+    });
+  };
+  const handleClickSelectLanguage = (event, index) => {
+    changeLanguage(supportedLanguages[index]);
+  };
+  return (
+      <>
+        <div className="ui compact menu">
+          <div className="ui simple dropdown item">
+              Language <i className="world icon"></i>
+              <div className="menu">
+              {supportedLanguages.map((option, index) => (
+                <div className="item" key={option} onClick={event => handleClickSelectLanguage(event, index)} data-value="en">
+                  {option}
+              </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      {children}
+    </>
+  );
+}
+
+export default withRouter(withTranslation("routes")(LanguageSwitcherComp));
