@@ -10,7 +10,7 @@ function Contact() {
       <div className="container">
         <section className="ui grid">
           <div className="row">
-            <div className="sixteen wide tabley eight wide computer column">
+            <div className="sixteen wide tablet eight wide computer column">
               <h1>
                 'We’re always looking for grocery partners, talent, and
                 investors who share our vision of a fresher future. '
@@ -59,7 +59,6 @@ function Contact() {
           </div>
         </section>
       </div>
-      <Footer />
     </React.Fragment>
   );
 }

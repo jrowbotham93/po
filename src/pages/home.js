@@ -26,7 +26,6 @@ function Home() {
       <section className="section-b">
         <Grid />
       </section>
-      <Footer />
     </React.Fragment>
   );
 }

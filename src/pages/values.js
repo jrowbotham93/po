@@ -17,7 +17,6 @@ function Values() {
           />
         </div>
       </section>
-      <Footer />
     </React.Fragment>
   );
 }

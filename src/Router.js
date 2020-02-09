@@ -7,7 +7,7 @@ import Services from './pages/services';
 import Story from './pages/story';
 import Ukraine from './pages/ukraine';
 import Menu from './components/Menu';
-
+import Footer from './components/Footer';
 const Router = () => {
   return (
     <>
@@ -20,6 +20,7 @@ const Router = () => {
         <Route exact path="/ourstory" component={Story}></Route>
         <Route exact path="/ukraine" component={Ukraine}></Route>
       </Switch>
+      <Footer />
     </>
   );
 };

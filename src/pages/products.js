@@ -1,5 +1,4 @@
 import React from 'react';
-import Footer from '../components/Footer.js';
 
 function Products() {
   return (
@@ -54,7 +53,6 @@ function Products() {
           </div>
         </section>
       </div>
-      <Footer />
     </React.Fragment>
   );
 }

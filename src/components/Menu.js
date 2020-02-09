@@ -12,8 +12,13 @@ export default () => (
     </Link>
     <ul className="main-nav" id="js-menu">
       <li className="nav-links">
-        <Link exact to="/">
-          Home
+        <Link exact to="/services">
+          Services
+        </Link>
+      </li>
+      <li className="nav-links">
+        <Link exact to="/ourstory">
+          About
         </Link>
       </li>
       <li className="nav-links">
