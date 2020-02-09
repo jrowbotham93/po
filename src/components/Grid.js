@@ -7,8 +7,12 @@ import svgB from '../images/layers-outline.svg';
 import svgC from '../images/leaf-outline.svg';
 import svgD from '../images/library-outline.svg';
 import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
+
 
 function Grid(){
+    const { t } = useTranslation();
+
     return (
         <div className="ui stackable four column grid">
             <div className="Left floated right aligned column">
@@ -22,7 +26,7 @@ function Grid(){
                         text={"ourServicesHeading"}
                         subtext={"ourServicesSubHead"}>
                     </Header>
-                    <Button styles={"btn btn-sm"} text={"Read more"}></Button>
+                    <Button styles={"btn btn-sm"} text={t("readMore")}></Button>
                 </Link>
             </div>
             <div className="Right floated right aligned column">
@@ -33,7 +37,7 @@ function Grid(){
                         text={"ourProductsHeading"}
                         subtext={"ourProductsSubHead"}>
                     </Header>
-                    <Button styles={"btn btn-sm"} text={"Read more"}></Button>
+                    <Button styles={"btn btn-sm"} text={t("readMore")}></Button>
                 </Link>
             </div>
             <div className="Right floated left aligned column">
@@ -50,7 +54,7 @@ function Grid(){
                         text={"whyUkraineHeading"}
                         subtext={"whyUkraineSubHead"}>
                     </Header>
-                    <Button styles={"btn btn-sm"} text={"Read more"}></Button>
+                    <Button styles={"btn btn-sm"} text={t("readMore")}></Button>
                 </Link>
             </div>
             <div className="Right floated right aligned column">
@@ -61,7 +65,7 @@ function Grid(){
                         text={"ourHistoryHeading"}
                         subtext={"ourHistorySubHead"}>
                     </Header>
-                    <Button styles={"btn btn-sm"} text={"Read more"}></Button>
+                    <Button styles={"btn btn-sm"} text={t("readMore")}></Button>
                 </Link>
             </div>
             <div className="Right floated left aligned column">
