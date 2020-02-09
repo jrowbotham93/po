@@ -5,8 +5,11 @@ import logo from '../images/logo.jpg';
 import Lng from './LanguageSelector.js';
 import '../styles/navbar.css';
 import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
 
 export default function Menu() {
+  const { t } = useTranslation();
+
   return(
     <nav className="navbar">
       <Link to={`/${i18n.language}/`}>
@@ -15,16 +18,18 @@ export default function Menu() {
       <ul className="main-nav" id="js-menu">
         <li className="nav-links">
           <Link to={`/${i18n.language}/services`}>
-            Services
+            {t('ourServicesHeading')}
           </Link>
         </li>
         <li className="nav-links">
           <Link to={`/${i18n.language}/ourstory`}>
-            About
+            {t('ourHistoryHeading')}
           </Link>
         </li>
         <li className="nav-links">
-          <Link to={`/${i18n.language}/contact`}>Contact</Link>
+          <Link to={`/${i18n.language}/contact`}>
+            {t('contactHead')}
+          </Link>
         </li>
         <li className="nav-links">
           <Lng />

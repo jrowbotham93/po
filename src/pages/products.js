@@ -1,4 +1,5 @@
 import React from 'react';
+import TextTranslate from '../components/TextTranslator';
 
 function Products() {
   return (
@@ -6,46 +7,67 @@ function Products() {
       <div className="container stackable centered">
         <section className="ui centered grid">
           <div className="row">
-            <div className="sixteen wide tabley eight wide computer column">
-              <h1 className="centered">Our Products</h1>
+            <div className="sixteen wide tablet eight wide computer column">
+              <h1 className="centered"><TextTranslate label={"productHeading"}/></h1>
               <p className="centered text-md">
-                We have established reliable partnerships with Ukrainian and
-                international companies to offer a wide range of organic
-                agricultural products, foremost grains/seeds and vegetable oils
-                to our manufacturing partners.
+              <TextTranslate label={"productText"}/>
               </p>
             </div>
           </div>
           <div className="row margin-top-medium">
-            <div className="sixteen wide tabley eight wide computer column">
-              <h3>Our main organic products include:</h3>
+            <div className="sixteen wide tablet eight wide computer column">
+              <h3><TextTranslate label={"productTableHeading"}/></h3>
               <table class="ui unstackable table">
                 <thead>
                   <tr>
-                    <th>Cereal grains</th>
-                    <th>Pulses</th>
-                    <th>Oil seeds</th>
-                    <th>Oils</th>
+                    <th><TextTranslate label={"tableHeadA"}/></th>
+                    <th><TextTranslate label={"tableHeadB"}/></th>
+                    <th><TextTranslate label={"tableHeadC"}/></th>
+                    <th><TextTranslate label={"tableHeadD"}/></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Corn</td>
-                    <td>Soybean</td>
-                    <td>Sunflower</td>
-                    <td>Sunflower oil refined</td>
+                    <td><TextTranslate label={"tableDataA"}/></td>
+                    <td><TextTranslate label={"tableDataH"}/></td>
+                    <td><TextTranslate label={"tableDataJ"}/></td>
+                    <td><TextTranslate label={"tableDataM"}/></td>
                   </tr>
                   <tr>
-                    <td>Wheat</td>
-                    <td>Lupine</td>
-                    <td>Hemp</td>
-                    <td>Deodorized Winterized</td>
+                    <td><TextTranslate label={"tableDataB"}/></td>
+                    <td><TextTranslate label={"tableDataI"}/></td>
+                    <td><TextTranslate label={"tableDataK"}/></td>
+                    <td><TextTranslate label={"tableDataN"}/></td>
                   </tr>
                   <tr>
-                    <td>Elyse</td>
-                    <td>24</td>
-                    <td>Designer</td>
-                    <td>Designer</td>
+                    <td><TextTranslate label={"tableDataC"}/></td>
+                    <td></td>
+                    <td><TextTranslate label={"tableDataL"}/></td>
+                    <td><TextTranslate label={"tableDataO"}/></td>
+                  </tr>
+                  <tr>
+                    <td><TextTranslate label={"tableDataD"}/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><TextTranslate label={"tableDataE"}/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><TextTranslate label={"tableDataF"}/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><TextTranslate label={"tableDataG"}/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
               </table>

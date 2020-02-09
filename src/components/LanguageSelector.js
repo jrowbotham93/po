@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 const supportedLanguages = ["en", "ru", "fr", "ua", "de"];
 
 function LanguageSwitcherComp(props) {
-  const { children, i18n, t, history, match } = props;
+  const { i18n, t, history, match } = props;
 
   const changeLanguage = nextLang => {
     i18n.changeLanguage(nextLang, () => {
@@ -31,9 +31,8 @@ function LanguageSwitcherComp(props) {
             </div>
           </div>
         </div>
-      {children}
-    </>
-  );
-}
+      </>
+    );
+  }
 
 export default withRouter(withTranslation("routes")(LanguageSwitcherComp));
