@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 import Backend from 'i18next-xhr-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
-const supportedLanguages = ["en", "ru", "fr", "ua", "de"];
+export const supportedLanguages = ['en', 'ru', 'fr', 'ua', 'de'];
 
 i18n
   .use(Backend)
@@ -11,14 +11,14 @@ i18n
   .use(initReactI18next)
   .init({
     whitelist: supportedLanguages,
-    fallbackLng: "en",
+    fallbackLng: 'en',
     debug: true,
 
     interpolation: {
       escapeValue: false
     },
     detection: {
-      order: ["path", "navigator"]
+      order: ['path', 'navigator']
     }
   });
 

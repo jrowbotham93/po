@@ -4,7 +4,7 @@
 }
 
 .margin-top {
-  margin-top: 100px;
+  margin-top: 140px !important;
 }
 .margin-top-medium {
   margin-top: 50px;
@@ -42,6 +42,12 @@
   margin-top: 140px;
   padding: 20px 40px;
   color: black;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 20px;
+  }
 }
 
 .flex-center {
@@ -194,7 +200,11 @@
   text-align: center;
 }
 
-.ui.grid > .column:not(.row),
+.services .ui.grid > .row > .column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .ui.grid > .row > .column.text {
   padding-left: 80px;
   padding-right: 80px;
@@ -204,7 +214,26 @@
   justify-content: center;
 }
 
-.ui.grid > .row .services .rows {
-  padding-top: 0;
-  padding-bottom: 0;
+.ui.grid > .row > .column.text.align-left {
+  align-items: flex-start;
+  font-size: 12px;
+}
+.services .ui.grid > .row {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 767px) {
+  .services .ui.grid > .row:nth-of-type(even) {
+    flex-direction: column-reverse;
+  }
+  .services img {
+    width: 80%;
+    display: block;
+    margin: 40px auto;
+  }
+
+  .ui.grid > .row > .column.mobile.hidden {
+    display: none;
+  }
 }
