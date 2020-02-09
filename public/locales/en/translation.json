@@ -3,23 +3,24 @@
 
     "ourMissionHeading": "Our mission",
     "ourValuesHeading": "Our values",
-    "ourHistoryHeading": "Our story",
-    "ourProductsHeading":"Our products",
-    "ourServicesHeading":"Our services",
+    "ourHistoryHeading": "About",
+    "ourProductsHeading":"Products",
+    "ourServicesHeading":"Services",
+    "contactHead": "Contact",
     "whyUkraineHeading":"Why Ukraine",
     "ourHistorySubHead": "From cultivating crops to cultivating culture: read about why ProOraganica was formed",
     "ourServicesSubHead": "We offer expertise in sourcing, purchasing, handling and processing",
     "ourProductsSubHead": "Organic grains, pulses and beats from the richest soils on earth",
     "whyUkraineSubHead": "Why Ukraine is set to become an organic agricultural powerhouse",
 
-    "mission": "We want to realise Ukraine's potential as an organic agricultural powerhouse, providing premium organic products and professional services. We will bring new opportunity to the Ukraine, cultivating positive social and environmental change whilst bolstering local and regional economies.",
-
-    "serviceHeading": "Services",
-    "sourcingHeading": "Sourcing",
-    "purchasingHeading": "Purchasing",
+    "missionHeading": "Our Mission",
+    "mission": "We want to realise Ukraine's potential as an organic agricultural powerhouse, providing premium organic products and professional services.",
     "handlingHeading": "Handling",
+    "purchasingHeading": "Purchasing",
+    "sourcingHeading": "Sourcing",
     "exportingHeading": "Exporting",
     "qualityControlHeading": "Quality Control",
+
     "serviceText": "We primarily focus on business-to-business partnerships and have proven expertise in sourcing, purchasing, and handling as well as processing and supply capabilities.",
     "sourcingText": "All the farms we work with are certified organic* and all the raw materials that we process go through strict hygiene/sanitary checks performed by independent accredited laboratories.",
     "purchasingText": "We always purchase produce directly from Ukrainian organic farmers at a fair price, supporting small and family companies across the region.",
@@ -32,6 +33,25 @@
 
     "contact": "contact",
     "readMore": "read more",
+
+    "contactHeading": "Contact Info",
+    "contactSubheading": "Drop us an e-mail if you would like to find out more about ProOrganica and our work in Ukraine",
+    "nameA": "Eugene Blokhin",
+    "nameB": "Pavel Gukov",
+    "nameC": "Iryna Sholokhova",
+    "positionA": "Logistics & Marketing",
+    "positionB": "Sales & Marketing",
+    "positionC": "Quality & Certification",
+    "emailHeading": "e-mail:",
+    "emailA": "eugene.blokhin@proorganica.com",
+    "emailB": "pavel.gukov@proorganica.com",
+    "emailC": "iryna.sholokhova@proorganica.com",
+    "mobHeading": "mobile:",
+    "mobA": "+380 67 544-93-37",
+    "mobB": "+380 50 807-93-15",
+    "mobC": "+380 50 531-11-18",
+    "addressHeading": "Address",
+    "address": "Naberezhno-Luhova Str. 12 \n Kyiv 04071 - Ukraine",
 
     "ourStoryHeading": "Our Story",
     "ourStorySubHeadingA": "From Cultivating Crops to Cultivating Culture",
@@ -49,7 +69,35 @@
     "ukraineTextB": "Ukraine is the largest country in Europe with a total area of 60.3 million hectares, including 42.7 million hectares of agricultural land, owning 33% of the world’s most fertile black top soils. Ukraine is ranked 11th in Europe according to the volume of organic agricultural area amounting 859 000 hectares: 201 000 hectares of fully converted land + 88 000 hectares of agricultural land in conversion + 570 000 hectares of wild area.Ukraine has outstanding potential to become a major global supplier of organic products as only 0.7% of its total farmland is now organic. Currently, under a national moratorium there are 41.5 million hectares of agricultural land of which 7% is not cultivated at all. Those lands that have been idle for decades are now being put to productive use with a focus on organic farming. With the planned opening of the land market, a new stage in Ukraine's agricultural productivity is expected.",
     "ukraineTextC": "Thanks to its size, geographical location, temperature climate, proximity to potential international buyers, and widespread fertile black top soils, Ukraine has extremely favourable conditions for organic agriculture.",
     "ukraineTextD": "Ukraine already has an established history in organic production: globally it is ranked 6th in organic oilseed production and 8th in organic wheat. There are already around 500 organic operators in Ukraine which are certified according to the EU organic standard, and/or US National Organic Program (NOP), Bio Suisse (Switzerland), Bioland and Naturland (Germany), COR (Canada), Soil Association (UK), and KRAV (Sweden).",
-    "ukraineTextE": "The “Deep and Comprehensive Free Trade Agreements” signed between Ukraine and the EU ensures lower tariffs and EU import duties. Ukrainian laws passed in 2018 on the basic principles and requirements of organic production, trade and labelling are now aligned with the European Union's organic legislation. Due to its geographical position between Europe and Asia, and access to deepwater ports in the Black Sea, Ukraine can ship goods nearly anywhere extremely competitively. Ukraine is highly competitive with its premium quality organic food products due to lower costs of resources, energy and labour."
+    "ukraineTextE": "The “Deep and Comprehensive Free Trade Agreements” signed between Ukraine and the EU ensures lower tariffs and EU import duties. Ukrainian laws passed in 2018 on the basic principles and requirements of organic production, trade and labelling are now aligned with the European Union's organic legislation. Due to its geographical position between Europe and Asia, and access to deepwater ports in the Black Sea, Ukraine can ship goods nearly anywhere extremely competitively. Ukraine is highly competitive with its premium quality organic food products due to lower costs of resources, energy and labour.",
+
+    "productHeading": "Our Products",
+    "productText": "We have established reliable partnerships with Ukrainian and international companies to offer a wide range of organic agricultural products, foremost grains/seeds and vegetable oils to our manufacturing partners.",
+    "productTableHeading": "Our main organic products include:",
+    "tableHeadA": "Cereal Grains",
+
+    "tableDataA": "Corn",
+    "tableDataB": "Wheat",
+    "tableDataC": "Spelt (Dinkel Wheat)",
+    "tableDataD": "Oat",
+    "tableDataE": "Rye",
+    "tableDataF": "Buckwheat",
+    "tableDataG": "Barley",
+
+    "tableHeadB": "Pulses",
+    "tableDataH": "Soybean",
+    "tableDataI": "Lupine",
+
+    "tableHeadC": "Oil seeds",
+    "tableDataJ": "Sunflower",
+    "tableDataK": "Hemp",
+    "tableDataL": "Flax",
+
+    "tableHeadD": "Oils",
+    "tableDataM": "Sunflower Oil Refined",
+    "tableDataN": "Deodorized Winterized",
+    "tableDataO": "High-Oleic"
+
 }
 
 

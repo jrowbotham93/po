@@ -2,17 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Button from './Button';
-import svgA from '../images/Infrastructure.svg';
-import svgB from '../images/FreshFood.svg';
-import svgC from '../images/EmpowerHumans.svg';
-import svgD from '../images/AiPlatform.svg';
+import svgA from '../images/earth-outline.svg';
+import svgB from '../images/layers-outline.svg';
+import svgC from '../images/leaf-outline.svg';
+import svgD from '../images/library-outline.svg';
 import i18n from '../i18n';
 
 function Grid(){
     return (
         <div className="ui stackable four column grid">
             <div className="Left floated left aligned column">
-                <img className="image" src={svgA}></img>
+                <img className="image" src={svgB}></img>
             </div>
             <div className="Left floated left aligned column text-black">
                 <Link to={`/${i18n.language}/services`}>
@@ -37,10 +37,10 @@ function Grid(){
                 </Link>
             </div>
             <div className="Right floated right aligned column">
-                <img className="image" src={svgB}></img>
+                <img className="image" src={svgC}></img>
             </div>
             <div className="Left floated left aligned column">
-                <img className="image" src={svgC}></img>
+                <img className="image" src={svgA}></img>
             </div>
             <div className="Left floated left aligned column">
                 <Link to={`/${i18n.language}/ukraine`}>
@@ -65,7 +65,7 @@ function Grid(){
                 </Link>
             </div>
             <div className="Right floated right aligned column">
-                <img className="l-image" src={svgD}></img>
+                <img className="image" src={svgD}></img>
             </div>
         </div>
     );
