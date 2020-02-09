@@ -5,10 +5,11 @@ import './App.css';
 import { withTranslation } from 'react-i18next';
 import './i18n';
 import { BrowserRouter, Switch, Redirect } from 'react-router-dom';
+import history from './history';
 
-function AppComp({ i18n, t, tReady, match, history }) {
-  if (!window.location.pathname.includes(i18n.language)) {
-    window.location.href = window.location.href + i18n.language;
+function AppComp({ i18n, t, tReady, match }) {
+  if (window.location.pathname === '/') {
+    history.push(i18n.language + '/');
   }
   if (!tReady) return <Loader />;
 

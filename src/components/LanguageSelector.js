@@ -2,11 +2,12 @@ import React from 'react';
 
 import { withTranslation } from 'react-i18next';
 import { withRouter } from 'react-router-dom';
+import history from '../history';
 
 import { supportedLanguages } from '../i18n';
 
 function LanguageSwitcherComp(props) {
-  const { i18n, t, history, match } = props;
+  const { i18n } = props;
 
   const changeLanguage = nextLang => {
     i18n.changeLanguage(nextLang, () => {
