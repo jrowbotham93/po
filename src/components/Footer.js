@@ -47,12 +47,10 @@ const Footer = (props) => {
 
       <div className="footer-right">
         <p className="footer-company-about">
-          <span><TextTranslator label={"ourStoryHeading"}/></span>
-          <TextTranslator label={"ourStoryTextA"}/>
-        </p>
         <p>Upcoming events</p>
         <p>Natural&Organic Products Europe, London, UK / 19-20 April, 2020</p>
         <a href="https://www.naturalproducts.co.uk/">https://www.naturalproducts.co.uk/</a>
+        </p>
       </div>
     </footer>
   );
