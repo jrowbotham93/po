@@ -25,20 +25,32 @@ const Router = ({ i18n, t, history, match }) => {
     <>
       <Menu t={t} i18n={i18n} history={history} match={match} />
       <Switch i18n={i18n}>
-        <Route exact path={`/:lang(en|ru)`} component={Home} />
-        <Route exact path={`/:lang(en|ru)/contact`} component={Contact}></Route>
+        <Route exact path={`/:lang(en|ru|ua)`} component={Home} />
         <Route
           exact
-          path={`/:lang(en|ru)/services`}
+          path={`/:lang(en|ru|ua)/contact`}
+          component={Contact}
+        ></Route>
+        <Route
+          exact
+          path={`/:lang(en|ru|ua)/services`}
           component={Services}
         ></Route>
         <Route
           exact
-          path={`/:lang(en|ru)/products`}
+          path={`/:lang(en|ru|ua)/products`}
           component={Products}
         ></Route>
-        <Route exact path={`/:lang(en|ru)/ourstory`} component={Story}></Route>
-        <Route exact path={`/:lang(en|ru)/ukraine`} component={Ukraine}></Route>
+        <Route
+          exact
+          path={`/:lang(en|ru|ua)/ourstory`}
+          component={Story}
+        ></Route>
+        <Route
+          exact
+          path={`/:lang(en|ru|ua)/ukraine`}
+          component={Ukraine}
+        ></Route>
         <Route path={`*`} component={NotFound}></Route>
       </Switch>
       <Footer i18n={i18n} />
