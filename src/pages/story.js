@@ -1,6 +1,5 @@
 import React from 'react';
 import cropA from '../images/cropB.svg';
-import cropB from '../images/cropA.svg';
 import TextTranslator from '../components/TextTranslator';
 
 function Story() {
