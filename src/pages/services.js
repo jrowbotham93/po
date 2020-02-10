@@ -4,6 +4,9 @@ import farm from '../images/farm.jpg';
 import grain from '../images/grain.jpg';
 import containers from '../images/containers.jpg';
 import TextTranslator from '../components/TextTranslator';
+import certificateA from '../images/Certificate-1.png'
+import certificateB from '../images/Certificate-1.png'
+import certificateC from '../images/Certificate-1.png'
 
 function Products() {
   return (
@@ -89,6 +92,11 @@ function Products() {
             <p>
               <TextTranslator label={'qualityControlText'} />
             </p>
+            <div>
+              <p ><a className="green" download href={certificateA}> Organic Standard Certification (EU)</a></p>
+              <p ><a className="green"download href={certificateC}> Chemex Product Certification</a></p>
+              <p ><a className="green"download href={certificateB}> Chemex Product Certification</a></p>
+            </div>
           </div>
           <div className="eight wide computer column">
             <img src={crops} alt="" />
