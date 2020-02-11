@@ -65,12 +65,6 @@ function Services() {
             <p>
               <TextTranslator label={'exportingTextC'} />
             </p>
-            <p>
-              <TextTranslator label={'exportingTextB'} />
-            </p>
-            <p>
-              <TextTranslator label={'exportingTextC'} />
-            </p>
           </div>
           <div className="eight wide computer column">
             <img src={grain} alt="" />
