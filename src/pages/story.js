@@ -4,11 +4,11 @@ import TextTranslator from '../components/TextTranslator';
 
 function Story() {
   return (
-    <div className="services">
+    <div >
       <div className="margin-top">
         <section className="ui centered stackable grid">
           <div className="row">
-            <div className="sixteen wide tablet eight wide computer column">
+            <div className="sixteen wide tablet eight wide computer column text">
               <h1 className="centered">
                 <TextTranslator label={'ourStoryHeading'} />
               </h1>

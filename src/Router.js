@@ -7,6 +7,7 @@ import Services from './pages/services';
 import Story from './pages/story';
 import Ukraine from './pages/ukraine';
 import Menu from './components/Menu';
+import Values from './pages/values';
 import Footer from './components/Footer';
 import NotFound from './pages/404NotFound';
 
@@ -50,6 +51,11 @@ const Router = ({ i18n, t, history, match }) => {
           exact
           path={`/:lang(en|ru|ua)/ukraine`}
           component={Ukraine}
+        ></Route>
+        <Route
+          exact
+          path={`/:lang(en|ru|ua)/values`}
+          component={Values}
         ></Route>
         <Route path={`*`} component={NotFound}></Route>
       </Switch>

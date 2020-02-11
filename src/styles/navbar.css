@@ -32,3 +32,12 @@
   box-shadow: none;
   border: none;
 }
+
+@media (max-width: 600px){
+  .navbar img {
+    width: 100px;
+  }
+  .navbar  {
+    padding: 10px;
+  }
+}

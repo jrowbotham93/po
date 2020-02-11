@@ -22,7 +22,6 @@ const Footer = (props) => {
       <div>
         <p><i className="fa fa-certificate"></i><a download href={certificateA}>Organic Standard Certification (EU)</a></p>
         <p><i className="fa fa-certificate"></i><a download href={certificateC}>Chemex Product Certification</a></p>
-        <p><i className="fa fa-certificate"></i><a download href={certificateB}>Chemex Product Certification</a></p>
       </div>
       <div className="footer-center">
         <div>
@@ -46,11 +45,11 @@ const Footer = (props) => {
       </div>
 
       <div className="footer-right">
-        <p className="footer-company-about">
-        <p>Upcoming events</p>
+        <div className="footer-company-about">
+        <h3>Upcoming events</h3>
         <p>Natural&Organic Products Europe, London, UK / 19-20 April, 2020</p>
         <a href="https://www.naturalproducts.co.uk/">https://www.naturalproducts.co.uk/</a>
-        </p>
+        </div>
       </div>
     </footer>
   );

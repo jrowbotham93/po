@@ -62,7 +62,7 @@ function Grid(){
                     <Header
                         styleA={"text-md-hover line-height text-black"}
                         styleB={"text-sm line-height"}
-                        text={"ourHistoryHeading"}
+                        text={"ourStoryHeading"}
                         subtext={"ourHistorySubHead"}>
                     </Header>
                     <Button styles={"btn btn-sm"} text={t("readMore")}></Button>
