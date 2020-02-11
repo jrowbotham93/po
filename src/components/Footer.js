@@ -4,8 +4,14 @@ import { Link } from 'react-router-dom';
 import { Image } from 'semantic-ui-react';
 import logo from '../images/logo.jpg';
 import TextTranslator from '../components/TextTranslator';
+<<<<<<< HEAD
 import certificateA from '../files/Chemex_Organic_Certificate(EU).pdf';
 import certificateB from '../files/Chemex_Organic_Certificate(COR).pdf';
+=======
+import certificateA from '../images/Certificate-1.png';
+import certificateB from '../images/Certificate-1.png';
+import certificateC from '../images/Certificate-1.png';
+>>>>>>> some stuff
 
 const Footer = props => {
   const { i18n } = props;
@@ -27,7 +33,11 @@ const Footer = props => {
         </p>
         <p>
           <i className="fa fa-certificate"></i>
+<<<<<<< HEAD
           <a download href={certificateB}>
+=======
+          <a download href={certificateC}>
+>>>>>>> some stuff
             Chemex Product Certification
           </a>
         </p>
@@ -62,10 +72,8 @@ const Footer = props => {
       <div className="footer-right">
         <div className="footer-company-about">
           <h3>Upcoming events</h3>
-          <p>Natural&Organic Products Europe, London, UK / 19-20 April, 2020</p>
-          <a href="https://www.naturalproducts.co.uk/">
-            https://www.naturalproducts.co.uk/
-          </a>
+          <p>BioFach: 12. - 15. February 2020, Nürnberg, Germany</p>
+          <a href="https://www.biofach.de/">https://www.biofach.de/</a>
         </div>
       </div>
     </footer>

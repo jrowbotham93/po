@@ -4,8 +4,13 @@ import grainHand from '../images/grain-hand.jpg';
 import grain from '../images/grain.jpg';
 import containers from '../images/containers.jpg';
 import TextTranslator from '../components/TextTranslator';
+<<<<<<< HEAD
 import certificateA from '../files/Chemex_Organic_Certificate(EU).pdf';
 import certificateB from '../files/Chemex_Organic_Certificate(COR).pdf';
+=======
+import certificateA from '../images/Certificate-1.png';
+import certificateC from '../images/Certificate-1.png';
+>>>>>>> some stuff
 
 function Services() {
   return (
@@ -65,12 +70,15 @@ function Services() {
             <p>
               <TextTranslator label={'exportingTextC'} />
             </p>
+<<<<<<< HEAD
             <p>
               <TextTranslator label={'exportingTextB'} />
             </p>
             <p>
               <TextTranslator label={'exportingTextC'} />
             </p>
+=======
+>>>>>>> some stuff
           </div>
           <div className="eight wide computer column">
             <img src={grain} alt="" />
@@ -104,9 +112,14 @@ function Services() {
                   Organic Standard Certification (EU)
                 </a>
               </p>
+<<<<<<< HEAD
 
               <p>
                 <a className="green" download href={certificateB}>
+=======
+              <p>
+                <a className="green" download href={certificateC}>
+>>>>>>> some stuff
                   {' '}
                   Chemex Product Certification
                 </a>
@@ -117,7 +130,12 @@ function Services() {
             <img src={crops} alt="" />
           </div>
         </div>
+<<<<<<< HEAD
         <div className="row margin-top-medium">
+=======
+        <div className="row">
+          <div className="eight wide computer column computer-hidden"></div>
+>>>>>>> some stuff
           <div className="eight wide computer column text align-left">
             <p>
               <TextTranslator label={'servicesFootnoteA'} />
