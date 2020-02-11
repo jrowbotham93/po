@@ -1,6 +1,6 @@
 import React from 'react';
 import crops from '../images/crops.jpg';
-import farm from '../images/farm.jpg';
+import grainHand from '../images/grain-hand.jpg';
 import grain from '../images/grain.jpg';
 import containers from '../images/containers.jpg';
 import TextTranslator from '../components/TextTranslator';
@@ -40,7 +40,7 @@ function Services() {
         </div>
         <div className="row">
           <div className="eight wide computer column">
-            <img src={farm} alt="" />
+            <img src={grainHand} alt="" />
           </div>
           <div className="eight wide computer column text">
             <h3>
