@@ -20,7 +20,7 @@ export default function Menu() {
   return (
     <nav className="navbar">
       <Link to={`/${i18n.language}/`}>
-        <Image size="small" src={logo} />
+        <Image size="medium" src={logo} />
       </Link>
       <div className="flex-center ">
         <Lng />

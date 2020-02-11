@@ -4,14 +4,8 @@ import { Link } from 'react-router-dom';
 import { Image } from 'semantic-ui-react';
 import logo from '../images/logo.jpg';
 import TextTranslator from '../components/TextTranslator';
-<<<<<<< HEAD
 import certificateA from '../files/Chemex_Organic_Certificate(EU).pdf';
 import certificateB from '../files/Chemex_Organic_Certificate(COR).pdf';
-=======
-import certificateA from '../images/Certificate-1.png';
-import certificateB from '../images/Certificate-1.png';
-import certificateC from '../images/Certificate-1.png';
->>>>>>> some stuff
 
 const Footer = props => {
   const { i18n } = props;
@@ -28,17 +22,13 @@ const Footer = props => {
         <p>
           <i className="fa fa-certificate"></i>
           <a download href={certificateA}>
-            Organic Standard Certification (EU)
+            Chemex Organic Certificate (EU)
           </a>
         </p>
         <p>
           <i className="fa fa-certificate"></i>
-<<<<<<< HEAD
           <a download href={certificateB}>
-=======
-          <a download href={certificateC}>
->>>>>>> some stuff
-            Chemex Product Certification
+            Chemex Organic Certificate (COR)
           </a>
         </p>
       </div>
