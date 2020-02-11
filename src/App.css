@@ -7,6 +7,10 @@ html {
   font-family: "'Montserrat', sans-serif";
 }
 
+.ui.stackable.grid.reverse-columns.padding {
+  padding: 40px 0px;
+}
+
 .margin-top {
   margin-top: 140px !important;
 }
@@ -68,9 +72,18 @@ html {
 }
 
 .image {
-  max-width: 52%;
+  max-width: 52% !important;
   height: auto;
 }
+
+/* .image.left {
+  margin-right: auto;
+  display: block;
+}
+.image.right {
+  margin-left: auto;
+  display: block;
+} */
 
 .image-sm {
   max-width: 25%;
@@ -221,12 +234,29 @@ html {
 }
 
 .ui.grid > .row > .column.text {
-  padding-left: 80px;
-  padding-right: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+@media (min-width: 769px) {
+  .ui.grid > .row > .column.text {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+.services .ui.grid > .row > .column.text {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+@media (max-width: 768px) {
+  services .ui.grid > .row > .column.text {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .ui.grid > .row > .column.text.align-left {
@@ -239,7 +269,7 @@ html {
 }
 
 @media (max-width: 767px) {
-  .services .ui.grid > .row:nth-of-type(even) {
+  .reverse-columns.ui.grid > .row:nth-of-type(even) {
     flex-direction: column-reverse;
   }
   .services img {
