@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 
-function PopUpMenu({close}) {
+function PopUpMenu({ close }) {
   const { t } = useTranslation();
   return (
     <div className="menu">
@@ -23,7 +23,7 @@ function PopUpMenu({close}) {
             activeClassName="current"
             to={`/${i18n.language}/ourstory`}
           >
-            {t('ourHistoryHeading')}
+            {t('ourStoryHeading')}
           </Link>
         </li>
 
@@ -43,6 +43,15 @@ function PopUpMenu({close}) {
             to={`/${i18n.language}/services`}
           >
             {t('ourServicesHeading')}
+          </Link>
+        </li>
+        <li>
+          <Link
+            onClick={close}
+            activeClassName="current"
+            to={`/${i18n.language}/values`}
+          >
+            {t('ourValuesHeading')}
           </Link>
         </li>
         <li>

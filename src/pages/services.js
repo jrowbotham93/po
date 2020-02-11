@@ -5,7 +5,6 @@ import grain from '../images/grain.jpg';
 import containers from '../images/containers.jpg';
 import TextTranslator from '../components/TextTranslator';
 import certificateA from '../images/Certificate-1.png'
-import certificateB from '../images/Certificate-1.png'
 import certificateC from '../images/Certificate-1.png'
 
 function Products() {
@@ -54,23 +53,8 @@ function Products() {
         </div>
         <div className="row">
           <div className="eight wide computer column text">
-            <h3>
-              <TextTranslator label={'handlingHeading'} />
-            </h3>
-            <p>
-              <TextTranslator label={'handlingText'} />
-            </p>
-          </div>
-          <div className="eight wide computer column">
-            <img src={grain} alt="" />
-          </div>
-        </div>
-        <div className="row">
-          <div className="eight wide computer column">
-            <img src={containers} alt="" />
-          </div>
-          <div className="eight wide computer column text">
-            <h3>
+
+          <h3>
               <TextTranslator label={'exportingHeading'} />
             </h3>
             <p>
@@ -81,6 +65,24 @@ function Products() {
             </p>
             <p>
               <TextTranslator label={'exportingTextC'} />
+            </p>
+
+
+          </div>
+          <div className="eight wide computer column">
+            <img src={grain} alt="" />
+          </div>
+        </div>
+        <div className="row">
+          <div className="eight wide computer column">
+            <img src={containers} alt="" />
+          </div>
+          <div className="eight wide computer column text">
+          <h3>
+              <TextTranslator label={'handlingHeading'} />
+            </h3>
+            <p>
+              <TextTranslator label={'handlingText'} />
             </p>
           </div>
         </div>
@@ -93,9 +95,8 @@ function Products() {
               <TextTranslator label={'qualityControlText'} />
             </p>
             <div>
-              <p ><a className="green" download href={certificateA}> Organic Standard Certification (EU)</a></p>
-              <p ><a className="green"download href={certificateC}> Chemex Product Certification</a></p>
-              <p ><a className="green"download href={certificateB}> Chemex Product Certification</a></p>
+              <p><a className="green" download href={certificateA}> Organic Standard Certification (EU)</a></p>
+              <p><a className="green"download href={certificateC}> Chemex Product Certification</a></p>
             </div>
           </div>
           <div className="eight wide computer column">
@@ -103,6 +104,7 @@ function Products() {
           </div>
         </div>
         <div className="row">
+        <div className="eight wide computer column computer-hidden"></div>
           <div className="eight wide computer column text align-left">
             <p>
             <TextTranslator label={'servicesFootnoteA'} />

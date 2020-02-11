@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
   font-family: "'Montserrat', sans-serif";
@@ -151,7 +155,11 @@
 }
 
 .line-height {
-  line-height: 2em;
+  line-height: 1.5em;
+}
+
+.line-height-low {
+  line-height: 0.8em;
 }
 
 .margin-top-5 {
@@ -186,14 +194,21 @@
 .btn-lg {
   padding: 1.2em 2.8em;
 }
-.btn:hover,
-.btn:focus {
+.btn:hover {
   color: #fff;
+  outline: 0;
+}
+
+.btn:focus {
   outline: 0;
 }
 
 .btn:hover {
   box-shadow: 0 0 40px 40px #01bb85 inset;
+}
+
+.btn-animated {
+  animation: moveInBottom 1.4s ease-in-out;
 }
 
 .centered {
@@ -236,4 +251,21 @@
   .ui.grid > .row > .column.mobile.hidden {
     display: none;
   }
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.sixteen.wide.tablet.eight.wide.computer.column.center {
+  display: flex;
+  justify-content: center;
 }

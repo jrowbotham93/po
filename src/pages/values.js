@@ -1,23 +1,46 @@
 import React from 'react';
-import Menu from '../Menu.js';
-import Grid from '../Grid.js';
-import Header from '../Header.js';
-import Footer from '../Footer.js';
+import svgWheat from '../images/wheat.svg';
+import TextTranslator from '../components/TextTranslator';
+import Divider from '../components/Divider';
 
 function Values() {
   return (
-    <React.Fragment>
-      <section className="section-a">
-        <div className="container-a">
-          <Header
-            style={'ui huge header'}
-            text={
-              'Drop us an e-mail if you would like to find out more about ProOrganica and our work in Ukraine'
-            }
-          />
+    <div className="services">
+      <section className="ui stacked grid">
+        <div className="row margin-top">
+          <div className="sixteen wide tablet eight wide computer column text">
+            <h1>
+              <TextTranslator label={'ourValuesHeading'} />
+            </h1>
+            <Divider></Divider>
+            <h3>
+              <TextTranslator label={'valuesSubHeadingA'} />
+            </h3>
+            <p>
+              <TextTranslator label={'valuesTextB'} />
+            </p>
+            <hr></hr>
+            <h3>
+              <TextTranslator label={'valuesSubHeadingB'} />
+            </h3>
+            <p>
+              <TextTranslator label={'valuesTextB'} />
+            </p>
+            <hr></hr>
+            <h3>
+              <TextTranslator label={'valuesSubHeadingC'} />
+            </h3>
+            <p>
+              <TextTranslator label={'valuesTextC'} />
+            </p>
+            <hr></hr>
+          </div>
+          <div className="sixteen wide tablet eight wide computer column center">
+            <img className="image" src={svgWheat} alt="" />
+          </div>
         </div>
       </section>
-    </React.Fragment>
+    </div>
   );
 }
 

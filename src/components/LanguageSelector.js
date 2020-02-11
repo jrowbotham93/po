@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
-import { withTranslation } from 'react-i18next';
-import { withRouter } from 'react-router-dom';
-import history from '../history';
+import { withTranslation } from "react-i18next";
+import { withRouter } from "react-router-dom";
+import history from "../history";
 
-import { supportedLanguages } from '../i18n';
+import { supportedLanguages } from "../i18n";
 
 function LanguageSwitcherComp(props) {
   const { i18n } = props;
@@ -12,7 +12,7 @@ function LanguageSwitcherComp(props) {
   const changeLanguage = nextLang => {
     i18n.changeLanguage(nextLang, () => {
       const newUrl = `/${nextLang}${window.location.pathname.substr(
-        window.location.pathname.lastIndexOf('/')
+        window.location.pathname.lastIndexOf("/")
       )}`;
       history.push(newUrl);
     });
@@ -26,7 +26,7 @@ function LanguageSwitcherComp(props) {
         <div className="ui simple dropdown item">
           <i
             className={`${
-              i18n.language === 'en' ? 'gb uk' : i18n.language
+              i18n.language === "en" ? "gb uk" : i18n.language
             } flag`}
           ></i>
           <div className="menu">
@@ -36,7 +36,7 @@ function LanguageSwitcherComp(props) {
                 key={option}
                 onClick={event => handleClickSelectLanguage(event, index)}
               >
-                <i className={`${option === 'en' ? 'gb uk' : option} flag`}></i>
+                <i className={`${option === "en" ? "gb uk" : option} flag`}></i>
               </div>
             ))}
           </div>
@@ -46,4 +46,4 @@ function LanguageSwitcherComp(props) {
   );
 }
 
-export default withRouter(withTranslation('routes')(LanguageSwitcherComp));
+export default withRouter(withTranslation("routes")(LanguageSwitcherComp));
