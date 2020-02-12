@@ -1,19 +1,15 @@
 import React, { useRef } from 'react';
 import Grid from '../components/Grid.js';
 import Header from '../components/Header.js';
-import Button from '../components/Button.js';
 import logo from '../images/logo.jpg';
 import { Image } from 'semantic-ui-react';
-import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 
-
-
-const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)
+const scrollToRef = ref => window.scrollTo(0, ref.current.offsetTop - 80);
 
 const Home = () => {
   const { t } = useTranslation();
-  const myRef = useRef(null)
+  const myRef = useRef(null);
 
   return (
     <React.Fragment>
@@ -26,7 +22,12 @@ const Home = () => {
             text={'headingMain'}
           />
           <h4 className="text-black">{t('headingSub')}</h4>
-            <button onClick={()=>scrollToRef(myRef)} className={'btn-lg btn btn-animated'}>{t('readMore')}</button>
+          <button
+            onClick={() => scrollToRef(myRef)}
+            className={'btn-lg btn btn-animated'}
+          >
+            {t('readMore')}
+          </button>
         </div>
       </section>
       <section className="container section-b flex-center" ref={myRef}>
@@ -34,6 +35,6 @@ const Home = () => {
       </section>
     </React.Fragment>
   );
-}
+};
 
 export default Home;
