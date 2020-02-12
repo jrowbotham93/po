@@ -17,7 +17,7 @@ function Values() {
               <TextTranslator label={'valuesSubHeadingA'} />
             </h3>
             <p>
-              <TextTranslator label={'valuesTextB'} />
+              <TextTranslator label={'valuesTextA'} />
             </p>
             <hr></hr>
             <h3>
